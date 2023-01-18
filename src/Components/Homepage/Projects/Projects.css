@@ -1,0 +1,16 @@
+.ProjectContainer{
+    @apply flex flex-col w-full h-full border-b-[3px] border-x-[3px] justify-center
+    md:flex-row
+    md:border-b-[3px] border-gray-800 md:border-x-[0px]
+}
+.ProjectSides{
+    @apply hidden  lg:w-[5.7%] xl:w-[5.5%]
+    md:w-[5.8%]
+    md:flex md:flex-col md:justify-center md:items-center
+    md:h-auto md:border-x-[3px] md:border-gray-800;
+}
+
+.ProjectContent{
+    @apply flex flex-col w-full items-center py-10
+    md:w-[90%] md:py-20
+}

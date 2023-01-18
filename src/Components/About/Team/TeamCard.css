@@ -1,0 +1,50 @@
+.TeamCardContainer{
+    box-shadow:
+            2.6px 2.8px 3.8px rgba(0, 0, 0, 0.02),
+            6.3px 6.7px 9.2px rgba(0, 0, 0, 0.028),
+            11.8px 12.5px 17.3px rgba(0, 0, 0, 0.035),
+            21px 22.3px 30.8px rgba(0, 0, 0, 0.042),
+            39.3px 41.8px 57.7px rgba(0, 0, 0, 0.05),
+            94px 100px 138px rgba(0, 0, 0, 0.07)
+;
+    @apply flex flex-col mt-10
+    md:mt-0 md:w-[30%] md:h-[30%]
+}
+.TeamCardInfo{
+    @apply flex flex-col justify-center items-center w-full py-4
+}
+.TeamCardName{
+    @apply text-sm font-bold
+    lg:text-base
+}
+.TeamCardTitle{
+    @apply text-xs font-medium
+    lg:text-sm
+}
+.TeamCardImg{
+    @apply w-auto h-auto
+    md:w-[100%] md:h-[100%]
+}
+
+.TeamFirstIcon{
+    @apply w-10 h-10 bg-gray-200 flex justify-center items-center rounded-md absolute top-6 left-2
+    shadow-2xl
+    md:w-8 md:h-8
+    lg:w-9 lg:h-9
+    xl:w-10 xl:h-10
+    hover:-translate-y-1 hover:scale-110 duration-300
+}
+.TeamSecondIcon{
+    @apply w-10 h-10 bg-gray-200  flex justify-center items-center rounded-md absolute top-[4.5em] left-2
+    shadow-2xl
+    md:w-8 md:h-8
+    lg:w-9 lg:h-9
+    xl:w-10 xl:h-10
+    hover:-translate-y-1 hover:scale-110 duration-300
+}
+.TeamCardIcon{
+    @apply w-6 h-6 flex justify-center items-center
+    md:w-4 md:h-4
+    lg:w-5 lg:h-5
+    xl:w-6 xl:h-6
+}

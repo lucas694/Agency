@@ -1,0 +1,60 @@
+.ProjectsCardsContainer{
+    @apply flex flex-col w-full h-full items-center mt-12
+    md:mt-16
+}
+.ProjectsCardsContent{
+    @apply flex flex-col justify-around w-[90%]
+    md:flex-row md:w-[95%]
+    lg:w-[90%]
+}
+/*left side*/
+.ProjectCardsLeft{
+    @apply flex flex-col w-full items-center
+    md:w-[50%] md:items-start
+    xl:w-[40%]
+}
+.ProjectCardTextSec{
+    @apply flex flex-col items-center w-full px-4
+    md:w-[100%] md:items-start
+}
+
+.ProjectCardTitle{
+    @apply text-start text-2xl font-semibold uppercase
+    sm:text-3xl
+
+}
+.ProjectCardSpan{
+    @apply text-start text-xs font-semibold
+}
+.ProjectCardHR{
+    @apply w-full mt-4 mb-4 border-b-[1px] border-[#2E2E2E]
+    xl:w-[97%]
+    2xl:w-[90%]
+}
+.ProjectCardDesc{
+    @apply text-center text-base font-medium text-[#2E2E2E]
+    md:text-start
+}
+/*right side*/
+
+.ProjectCardsRight{
+    box-shadow:
+            4.1px 3.6px 4.1px -7px rgba(0, 0, 0, 0.038),
+            11.4px 10px 11.3px -7px rgba(0, 0, 0, 0.055),
+            27.4px 24.1px 27.1px -7px rgba(0, 0, 0, 0.072),
+            91px 80px 90px -7px rgba(0, 0, 0, 0.11)
+;
+    @apply flex flex-col w-full relative mt-6
+    md:w-[50%] md:mt-0
+    xl:w-[55%]
+}
+.ProjectCardBG{
+    @apply w-auto h-auto z-0
+}
+.ProjectCardsRightImgSec{
+    @apply w-full h-full z-10 absolute w-full h-full
+    flex flex-col items-center justify-center
+}
+.ProjectCardImg{
+    @apply w-[80%]
+}

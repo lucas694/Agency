@@ -1,0 +1,65 @@
+.BannerBtn{
+    @apply bg-[#F2ED72] font-bold px-6 py-2 w-full rounded-full uppercase text-2xl
+    border-solid border-[3px] border-gray-800
+    md:w-auto
+    hover:-translate-y-1 hover:shadow-lg hover:scale-110 duration-300
+}
+.BtnBlackBase{
+    @apply flex flex-row items-center justify-center
+    bg-[#2E2E2E] font-bold px-6 py-3 w-full uppercase text-lg text-gray-200
+    md:w-auto
+    hover:-translate-y-1 hover:scale-110 duration-300
+}
+.BtnIcon{
+    @apply ml-2 text-2xl text-[#F2ED72]
+}
+
+/*ServicesBTN*/
+.BtnBlackBaseServices{
+    @apply flex flex-row items-center justify-center w-[95%]
+    bg-[#2E2E2E] font-bold px-6 py-3 uppercase text-lg text-gray-200
+    hover:-translate-y-1 hover:scale-105 duration-300
+    md:w-[94%]
+}
+
+.ServCardButton{
+    @apply flex flex-row items-center mt-10 justify-center
+    w-full text-center text-xs font-semibold uppercase px-6 py-3 rounded-3xl
+    transition-all duration-700 ease-in-out border-solid border-2 border-transparent
+    hover:border-gray-800
+    md:mt-4
+    lg:mt-6
+    xl:mt-10
+    xl:w-1/2
+}
+
+/*Projects*/
+
+.ProjectCardButton{
+    @apply flex flex-row items-center mt-10 justify-center
+    w-full text-center text-xs font-semibold uppercase px-6 py-3 rounded-3xl
+    transition-all duration-700 ease-in-out border-solid border-2 border-transparent
+    hover:border-gray-800
+    md:mt-4
+    lg:mt-6
+    xl:mt-10
+    xl:w-1/2
+}
+
+/*Footer*/
+.BtnBlackFooter{
+    @apply flex flex-row items-center justify-center mt-5
+    bg-[#2E2E2E] font-bold px-6 py-3 w-full uppercase text-lg text-gray-200
+    xl:w-[70%]
+    hover:-translate-y-1 hover:scale-110 duration-300
+}
+
+/*AboutWWW*/
+.BtnBlackWWW{
+    @apply flex flex-row items-center justify-center
+    bg-[#2E2E2E] font-bold px-6 py-3 w-[90%] uppercase text-lg text-gray-200
+    md:w-[82%]
+    lg:w-[70%]
+    xl:w-[50%]
+    hover:-translate-y-1 hover:scale-110 duration-300
+}

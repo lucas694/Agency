@@ -1,0 +1,41 @@
+.ServicesCardContainer{
+    @apply flex flex-col border-[3px]  border-gray-800 w-full  mt-10
+    md:w-[32%] z-0 md:h-[20em]
+    xl:h-auto
+}
+.ServicesCardContent{
+    @apply flex flex-col w-full h-full py-16 px-5
+    md:py-10
+    lg:py-10
+    xl:py-12
+}
+.ServicesCardTittle{
+    @apply text-start text-xl font-semibold uppercase
+    md:text-lg
+    xl:text-xl
+}
+.ServiceCardDesc{
+    @apply text-start text-xs mt-5 font-medium text-[#2E2E2E] w-[90%]
+    lg:text-sm
+}
+
+/*Icon*/
+.ServCardIconContainer-Relative{
+    @apply relative
+}
+.ServCardIconContent-Absolute{
+    @apply border-[3px] border-gray-800 w-14 h-14 rounded-full flex items-center justify-center
+    absolute -top-8 left-5 z-20 bg-gray-50
+}
+.ServIcon{
+    @apply w-7 h-7 stroke-black
+}
+
+/* Destaque de card*/
+
+.ChangeBgColor{
+    @apply bg-[#FFE3CE]
+}
+.ChangeIconColor{
+    @apply bg-[#FFF969] border-solid border-l-4 border-b-4
+}

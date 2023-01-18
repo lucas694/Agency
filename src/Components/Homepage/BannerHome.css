@@ -1,0 +1,58 @@
+.BannerContainer{
+    @apply flex flex-row w-full h-full
+    bg-[#FFE3CE];
+}
+
+.BannerContent{
+    @apply flex flex-col w-full h-full border-b-[3px] border-x-[3px]
+    md:flex-row
+    md:border-b-[3px] border-gray-800 md:w-[90%] md:border-x-[0px]
+}
+.BannerLeft{
+    background-image: url("../../assets/homefront/Patterns.png");
+    background-repeat: no-repeat;
+
+    @apply flex flex-col w-full h-auto px-10 py-10 justify-center
+    md:w-1/2
+}
+.BannerTitle{
+    @apply text-3xl font-semibold uppercase text-center
+    md:text-left md:text-4xl
+}
+.BannerDescript{
+    @apply text-center text-sm mt-5 font-semibold text-[#2E2E2E]
+    md:text-left
+}
+
+.BannerBtnSection{
+    @apply flex w-full mt-6 justify-center
+    md:w-1/2 md:justify-start
+}
+
+.BannerBtn{
+    @apply bg-[#F2ED72] font-bold px-6 py-2 w-full rounded-full uppercase text-2xl
+    border-solid border-[3px] border-gray-800
+    md:w-auto
+}
+
+.BannerIcons{
+    @apply text-2xl text-gray-800 w-[30px]
+}
+
+.BannerRight{
+    @apply flex flex-col w-full h-full justify-center items-center px-10 py-10
+    md:w-1/2
+}
+.BannerImg{
+    @apply w-[100%]
+}
+
+.BannerSides{
+    @apply hidden  lg:w-[5.7%] xl:w-[5.5%]
+    md:w-[5.8%]
+    md:flex md:flex-col md:justify-center md:items-center
+    md:h-auto md:border-x-[3px] md:border-b-[3px] md:border-gray-800;
+}
+.BannerIconsSide{
+    @apply text-2xl text-gray-800 w-[30px] mt-4
+}

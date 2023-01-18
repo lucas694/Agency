@@ -1,0 +1,40 @@
+.ValuesContainer{
+    @apply flex flex-row  w-full h-full bg-[#2E2E2E] text-white
+}
+.ValuesSides{
+    @apply hidden  lg:w-[5.5%] xl:w-[5.5%] bg-white
+    md:w-[5.8%]
+    md:flex md:flex-col md:justify-center md:items-center
+    md:h-auto md:border-x-[3px] md:border-b-[3px] md:border-gray-800;
+}
+.ValuesContent{
+    @apply flex flex-col justify-center items-center w-full h-full py-10 px-6
+    md:w-[90%] md:py-14 md:px-20
+    xl:px-60
+}
+.ValuesTitle{
+    @apply text-3xl font-semibold text-center
+}
+.HrValues{
+    @apply w-full h-[3px] bg-white mt-6 rounded-full
+}
+.TopicsContainer{
+    @apply flex flex-col w-full h-full mt-2
+}
+.ValuesTopics{
+    @apply flex flex-row justify-between w-full mt-4
+}
+.ValuesTopicTitle{
+    @apply text-base font-semibold text-start
+}
+.ValuesTopicDescription{
+    @apply text-base text-start mt-2 font-medium text-sm w-[80%]
+}
+
+.ArrowBtn{
+    @apply w-6 h-6 fill-gray-400
+    hover:fill-yellow-50 transition-all duration-300
+}
+.ArrowBtnOpen{
+    @apply w-6 h-6 fill-yellow-200 rotate-90 transition-all duration-300
+}

@@ -1,0 +1,43 @@
+.HeaderContainer{
+    @apply bg-white border-y-[3px] border-gray-900
+    md:border-[3px]
+}
+.HeaderContent{
+    @apply flex flex-row items-center w-[100%] h-16;
+}
+
+/* Workment*/
+.HeaderWorkment{
+    @apply  border-x-[3px] border-gray-900 w-[30%] h-full
+    flex flex-row justify-center items-center font-semibold text-xs
+
+    md:text-2xl md:border-x-[3px] md:font-bold
+}
+/*  Lista */
+.HeaderList{
+    @apply flex flex-row justify-center items-center border-r-[3px] border-gray-900 w-[70%] h-full
+    bg-[#DAF6CC]
+    md:w-[60%]
+}
+.UlHome{
+    @apply hidden
+    md:flex md:flex-row md:justify-center md:items-center
+}
+
+.LiHome{
+    @apply flex flex-row justify-center items-center w-[50%] h-full uppercase
+    text-[#89A87A] cursor-pointer text-sm font-semibold py-2 px-3 rounded-xl
+    transition-all duration-300 ease-in-out
+    lg:text-lg
+    hover:bg-[#B5E8B0] hover:text-[#2E2E2E]
+}
+
+
+{/*Laterais*/}
+.HeaderSides{
+    @apply  hidden
+    md:w-[5.1%] md:flex md:flex-row md:justify-center md:items-center ;
+}
+.HeaderIcons{
+    @apply text-2xl text-gray-900 w-[30px]
+}

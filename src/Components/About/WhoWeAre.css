@@ -1,0 +1,46 @@
+.WWAContainer{
+    @apply flex flex-row w-full h-auto
+}
+.WWASides{
+    @apply hidden  lg:w-[5.5%] xl:w-[5.5%]
+    md:w-[5.8%]
+    md:flex md:flex-col md:justify-center md:items-center
+    md:h-auto md:border-x-[3px] md:border-b-[3px] md:border-gray-800;
+}
+.WWAContent{
+    @apply flex flex-col justify-center items-center w-full h-full py-14 px-4
+    border-b-[3px] border-x-[3px]
+    md:flex-row md:px-0
+    md:border-b-[3px] border-gray-800 md:w-[90%] md:border-x-[0px]
+}
+
+.WWARight{
+    @apply w-full mt-10
+    md:w-1/2 md:mt-0
+}
+
+.WWWTitle{
+    @apply text-3xl font-semibold text-center
+    md:text-start md:w-[90%] md:text-2xl
+    2xl:w-[60%] xl:text-3xl
+}
+.WWWDesc{
+    @apply text-base text-center mt-4 font-medium text-sm
+    md:text-start md:w-[80%]
+}
+.WWWBtnSec{
+    @apply w-full flex flex-row mt-6 justify-center
+    md:justify-start
+}
+/*LeftSite*/
+
+.WWALeft{
+    @apply w-full flex justify-center items-center
+    md:w-1/2
+}
+
+.WWWImg{
+    @apply w-[90%] h-[90%] object-contain
+    sm:w-[70%] sm:h-[70%]
+    xl:w-[60%] xl:h-[60%]
+}

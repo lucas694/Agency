@@ -1,0 +1,3 @@
+.AboutContainer{
+    @apply flex flex-col w-full h-full
+}

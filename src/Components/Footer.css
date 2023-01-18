@@ -1,0 +1,110 @@
+.FooterContainer{
+    @apply flex flex-row w-full h-auto
+}
+.FooterSides{
+    @apply hidden  lg:w-[5.7%] xl:w-[5.5%]
+    md:w-[5.8%]
+    md:flex md:flex-col md:justify-center md:items-center
+    md:h-auto md:border-x-[3px] md:border-b-[3px] md:border-gray-800;
+}
+.FooterContent{
+    @apply flex flex-col w-full items-center
+    h-auto border-x-[3px] border-b-[3px] border-gray-800
+    md:w-[90%] md:border-x-[0px]
+}
+.FooterMain{
+    @apply flex flex-col w-full px-4 py-8
+    md:flex-row md:px-10 md:py-16
+}
+.FooterLeft{
+    @apply w-full flex flex-col items-center
+    md:w-1/2 md:items-start
+}
+.FooterIcon{
+    @apply w-10 h-10 mr-2 mb-1
+}
+.FooterTitle{
+    @apply flex flex-row items-center text-2xl font-semibold uppercase mt-2
+}
+.FooterDesc{
+    @apply text-center text-xs mt-4 font-medium text-[#2E2E2E] w-full
+    md:w-[100%] md:text-start
+    xl:w-[70%]
+}
+.FooterSocialMedia{
+    @apply flex flex-col items-center mt-8
+    md:items-start
+}
+.FooterContact{
+    @apply text-sm font-semibold uppercase mt-3
+}
+.FooterIconsSec{
+    @apply flex flex-row mt-4
+}
+
+.IconDivFooter{
+    box-shadow:
+            0px 3.2px 7px rgba(0, 0, 0, 0.042),
+            0px 7.7px 16.8px rgba(0, 0, 0, 0.061),
+            0px 14.5px 31.7px rgba(0, 0, 0, 0.075),
+            0px 25.9px 56.5px rgba(0, 0, 0, 0.089),
+            0px 48.5px 105.7px rgba(0, 0, 0, 0.108),
+            0px 116px 253px rgba(0, 0, 0, 0.15)
+;
+    @apply bg-[#FFB9DB] w-10 h-10 rounded-[10px] flex items-center justify-center mr-2
+}
+
+/* Right Content*/
+.FooterRight{
+    @apply w-full mt-6
+    md:w-1/2 md:mt-0
+}
+.FooterR-Content{
+    @apply flex flex-col bg-[#C2F4FF] border-[3px] border-gray-800 w-full h-auto px-6 py-10 mt-2
+    lg:px-10
+}
+.InputFooter{
+    @apply py-4 px-2 border-[3px] border-gray-800 placeholder-gray-600 font-medium text-sm
+
+}
+
+.ErrorFooter{
+    @apply text-red-500 bg-red-200 text-xs font-medium mt-2  w-full py-1 rounded-[5px]
+}
+.RocketDiv{
+    @apply relative w-full
+}
+.RocketImg{
+    @apply absolute -top-24 -right-8 w-24 h-24
+}
+/*Navbar*/
+.FooterNavbar{
+    @apply flex flex-col w-full h-auto border-y-[3px] border-gray-800
+    md:flex-row
+}
+.LiFooter{
+    @apply flex flex-row justify-center items-center h-full uppercase w-[25%]
+    text-[#2E2E2E] cursor-pointer text-sm font-semibold py-2 px-3 rounded-xl
+    transition-all duration-300 ease-in-out
+    md:text-xs
+    lg:text-sm
+}
+
+.FooterNavbar-Left{
+    @apply w-full flex flex-row items-center justify-center bg-[#FFE3CE] py-2
+    border-gray-800
+    md:w-[40%] md:border-r-[3px] md:border-l-0
+ }
+
+.FooterNavbar-Right{
+    @apply hidden
+    w-[60%]
+    md:flex flex-row items-center justify-center py-2 bg-[#FFB9DB]
+}
+
+/*FooterCopy*/
+.FooterCopy{
+    @apply flex flex-row items-center justify-center py-2 px-2 text-xs text-[#2E2E2E] font-medium
+    border-gray-800 w-full h-auto
+    md:border-x-[0] md:px-0
+}
