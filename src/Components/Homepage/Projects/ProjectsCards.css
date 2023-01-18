@@ -1,5 +1,5 @@
 .ProjectsCardsContainer{
-    @apply flex flex-col w-full h-full items-center mt-12
+    @apply flex flex-col w-full h-full items-center mt-16   
     md:mt-16
 }
 .ProjectsCardsContent{

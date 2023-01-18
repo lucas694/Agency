@@ -4,12 +4,12 @@ const TeamCard = (props) =>{
   return(
     <div className={"TeamCardContainer"}>
       <div className={"relative flex-col"}>
-        <a href={"#"}>
+        <a href={"#"} target={"_blank"}>
           <span className={"TeamFirstIcon"}>
             {props.FistIcon}
           </span>
         </a>
-        <a href={"#"}>
+        <a href={"#"} target={"_blank"}>
           <span className={"TeamSecondIcon"}>
             {props.SecondIcon}
           </span>

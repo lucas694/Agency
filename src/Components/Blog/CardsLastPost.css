@@ -1,0 +1,55 @@
+.CardLastPostContainer{
+    @apply flex flex-col w-[20em] h-[25em] mt-10
+    md:w-[24em] md:h-[30em]
+    lg:w-[40%]
+    xl:w-[35%]
+    xl:w-[34%]
+}
+/*Card Img*/
+.CardLastPostImgContent{
+    @apply flex justify-center items-center w-full h-[50%] 
+}
+.img{
+    @apply w-[90%] h-[80%] object-cover border-2 border-gray-800
+}
+
+/*Card Informations*/
+.CardLastPostInf{
+    @apply flex flex-col w-full h-[40%] bg-white
+}
+.CardInfsSec{
+    @apply flex flex-row w-full border-b-2 border-gray-800
+}
+
+/**/
+.CardInfData{
+    @apply flex items-center justify-center w-1/2 py-1
+}
+.CardInfData p{
+    @apply text-xs font-semibold
+}
+.CardLastIcon{
+    @apply w-8 h-8 mr-1
+}
+
+/*Card Description*/
+.CardLastDescription{
+    @apply flex flex-col w-full h-full py-4 px-4 justify-between
+
+}
+.CardLastDescription h1{
+    @apply text-sm font-bold text-start uppercase
+    md:text-base
+}
+
+/*Icon Sec*/
+.IconDiv{
+    @apply relative w-full
+}
+.CardLastArrowIcon{
+    @apply absolute w-11 h-11 right-0 -bottom-2 mr-2 mb-2
+    fill-gray-700 transition-all duration-300 ease-in-out
+}
+.CardLastArrowIcon:hover{
+    @apply fill-gray-900 -rotate-45 cursor-pointer
+}

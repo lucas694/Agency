@@ -28,7 +28,8 @@
     @apply text-base font-semibold text-start
 }
 .ValuesTopicDescription{
-    @apply text-base text-start mt-2 font-medium text-sm w-[80%]
+    @apply text-base text-start mt-2 font-medium text-sm w-[90%]
+    lg:w-[80%]
 }
 
 .ArrowBtn{

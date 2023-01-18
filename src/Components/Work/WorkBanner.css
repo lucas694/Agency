@@ -1,21 +1,20 @@
-.AboutUsContainer{
-    @apply flex flex-row w-full h-full
-    bg-[#DAF6CC];
+.WorkBannerContainer{
+    @apply flex flex-row w-full h-full bg-[#E1FFE4]
 }
-.AboutUsSides{
+.WorkBannerSides{
     @apply hidden  lg:w-[5.5%] xl:w-[5.5%] 2xl:w-[5.4%]
     md:w-[5.8%]
     md:flex md:flex-col md:justify-center md:items-center
     md:h-auto md:border-x-[3px] md:border-b-[3px] md:border-gray-800;
 }
-.AboutUsContent{
-    background-image: url("../../assets/About/BannerAboutUs.png");
+.WorkBannerContent{
+    background-image: url("../../assets/work/WorkBanner.png");
     @apply flex flex-col justify-center items-center w-full h-full border-b-[3px] border-x-[3px] py-24
     bg-no-repeat bg-contain bg-center
     md:border-b-[3px] border-gray-800 md:w-[90%] md:border-x-[0px]
     md:bg-center md:bg-auto md:py-40
 }
-.AboutUsTitle{
+.WorkTitle{
     @apply text-2xl font-semibold text-center
     md:text-3xl
 }

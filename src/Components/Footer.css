@@ -43,15 +43,7 @@
 }
 
 .IconDivFooter{
-    box-shadow:
-            0px 3.2px 7px rgba(0, 0, 0, 0.042),
-            0px 7.7px 16.8px rgba(0, 0, 0, 0.061),
-            0px 14.5px 31.7px rgba(0, 0, 0, 0.075),
-            0px 25.9px 56.5px rgba(0, 0, 0, 0.089),
-            0px 48.5px 105.7px rgba(0, 0, 0, 0.108),
-            0px 116px 253px rgba(0, 0, 0, 0.15)
-;
-    @apply bg-[#FFB9DB] w-10 h-10 rounded-[10px] flex items-center justify-center mr-2
+    @apply bg-[#FFB9DB] w-10 h-10 rounded-[10px] flex items-center justify-center mr-2 shadow-xl
 }
 
 /* Right Content*/

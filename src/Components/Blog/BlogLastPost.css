@@ -1,0 +1,26 @@
+.LastPostContainer{
+    @apply flex flex-row w-full h-full bg-[#FFE3CE]
+}
+.LastPostSides{
+    @apply hidden  lg:w-[5.5%] xl:w-[5.5%] 2xl:w-[5.4%]
+    md:w-[5.8%]
+    md:flex md:flex-col md:justify-center md:items-center
+    md:h-auto md:border-x-[3px] md:border-b-[3px] md:border-gray-800;
+}
+.LastPostContent{
+    @apply flex flex-col justify-center items-center w-full h-full border-b-[3px] border-x-[3px] py-10
+    md:border-b-[3px] border-gray-800 md:w-[90%] md:border-x-[0px]
+}
+.LastPostTitle{
+    @apply text-2xl font-semibold text-center uppercase
+    md:text-3xl
+}
+.LastPostDesc{
+    @apply text-center text-sm mt-4 w-[90%]
+    md:text-base md:w-1/2
+}
+
+.LastPostCardContainer{
+    @apply flex flex-row flex-wrap justify-around w-full h-full mt-10
+    md:w-[90%] md:px-0
+}

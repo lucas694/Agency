@@ -1,0 +1,21 @@
+.GalleryCardContainer{
+    @apply flex flex-col items-center justify-center w-[25em] mt-10 shadow-xl
+    md:w-[30em]
+}
+.GalleryCardText{
+    @apply flex flex-col items-start w-full py-4
+}
+.GalleryCardTitle{
+    @apply text-xl font-semibold uppercase
+    md:text-2xl
+}
+.GalleryCardDescription{
+    @apply text-xs font-medium
+}
+
+.GalleryCardImage{
+    @apply w-full h-full border-2 border-black
+}
+.img{
+    @apply  w-[80%] h-[80%] object-cover
+}
