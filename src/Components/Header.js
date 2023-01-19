@@ -36,7 +36,6 @@ const Header = () => {
             </li>
           </ul>
         </div>
-
         {/*Lateral Direita*/}
         <section className={"HeaderSides"}>
           <RxEnvelopeClosed className={"HeaderIcons"}/>

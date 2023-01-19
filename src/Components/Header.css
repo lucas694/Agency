@@ -1,6 +1,6 @@
 .HeaderContainer{
-    @apply bg-white border-y-[3px] border-gray-900
-    md:border-[3px]
+    @apply bg-white border-y-[3px] border-gray-900 hidden
+    md:border-[3px] md:block
 }
 .HeaderContent{
     @apply flex flex-row items-center w-[100%] h-16;

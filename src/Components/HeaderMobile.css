@@ -1,0 +1,23 @@
+.HeaderMobileContainer{
+    @apply bg-[#2E2E2E] w-full fixed top-0 z-50 py-4 px-10 text-white
+    md:hidden
+}
+.UlMobileHeader{
+    @apply flex flex-row justify-around
+}
+.LiMobileHeader{
+    @apply py-1 px-3 rounded-full
+    hover:bg-blue-300 hover:text-[#2E2E2E]
+}
+
+.LinkMobileHeader{
+    @apply flex flex-row items-center justify-center rounded-md
+
+}
+.NameMobileHeader{
+    @apply text-sm font-semibold transition-all duration-300
+}
+
+.IconMobile{
+    @apply w-7 h-7 mr-2 mb-2
+}

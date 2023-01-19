@@ -1,0 +1,26 @@
+.OfficesContainer{
+    @apply flex flex-row w-full h-full
+}
+.OfficeSides{
+    @apply hidden  lg:w-[5.5%] xl:w-[5.5%] 2xl:w-[5.4%]
+    md:w-[5.8%]
+    md:flex md:flex-col md:justify-center md:items-center
+    md:h-auto md:border-x-[3px] md:border-b-[3px] md:border-gray-800;
+}
+.OfficeContent{
+    @apply flex flex-col justify-center items-center w-full h-full border-b-[3px] border-x-[3px] py-10 px-10
+    md:border-b-[3px] border-gray-800 md:w-[90%] md:border-x-[0px] md:px-24 md:py-20
+    lg:px-10 xl:px-24
+}
+.OfficeTitle{
+    @apply text-xl font-semibold text-start uppercase
+}
+.OfficeDescription{
+    @apply text-xs text-center mt-2
+    2xl:w-[40%]
+}
+
+.CardsOfficeSection{
+    @apply flex flex-col w-full justify-center items-center mt-10
+    lg:flex-row lg:justify-around
+}

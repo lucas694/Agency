@@ -1,0 +1,18 @@
+.FaqTopics{
+    @apply flex flex-row justify-between w-full mt-4
+}
+.FaqTopicTitle{
+    @apply text-base font-semibold text-start
+}
+.FaqTopicDescription{
+    @apply text-base text-start mt-2 font-medium text-sm w-[90%]
+    lg:w-[80%]
+}
+
+.FaqIconOpen{
+    @apply w-6 h-6 fill-gray-400
+    hover:fill-yellow-50
+}
+.FaqIconClose{
+    @apply w-6 h-6 fill-yellow-200
+}

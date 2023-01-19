@@ -6,6 +6,8 @@ import HomePage from "./Components/Homepage/HomePage";
 import About from "./Components/About/About";
 import Work from "./Components/Work/Work";
 import Blog from "./Components/Blog/Blog";
+import Contact from "./Components/Contact/Contact";
+import HeaderMobile from "./Components/HeaderMobile";
 
 function App() {
   return (
@@ -13,11 +15,13 @@ function App() {
 
       <Router>
         <Header />
+        <HeaderMobile />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/About" element={<About />} />
           <Route path="/Work" element={<Work />} />
           <Route path="/Blog" element={<Blog />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>

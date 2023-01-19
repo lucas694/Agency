@@ -1,0 +1,15 @@
+.FaqContainer{
+    @apply flex flex-col  w-full h-full bg-[#2E2E2E] text-white py-10 px-10
+    md:py-20 md:px-20
+    xl:px-60
+}
+
+.FaqTitle{
+    @apply text-3xl font-semibold text-center mb-3
+}
+.HrFaq{
+    @apply w-full h-[3px] bg-white mt-6 rounded-full
+}
+.TopicsFaqContainer{
+    @apply flex flex-col w-full h-full mt-2
+}

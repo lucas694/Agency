@@ -1,0 +1,21 @@
+.CardOfficeContainer{
+    @apply flex flex-col items-center justify-center w-[90%] mt-8
+    sm:w-[50%]
+    lg:w-[30%] lg:mt-0
+}
+.CardOfficeImg{
+    @apply w-full object-cover
+}
+.OfficeImg{
+    @apply w-full border-2 border-gray-800
+}
+.CardOfficeInfs{
+    @apply flex flex-col w-full mt-2
+}
+.CardOfficeTitle{
+    @apply text-sm font-semibold text-start uppercase
+}
+.CardOfficeDescription{
+    @apply text-xs text-start mt-1
+    md:text-sm
+}
