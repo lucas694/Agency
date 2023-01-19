@@ -7,7 +7,7 @@ import  {FaArrowRight}  from  "react-icons/fa" ;
 const CardsLastPost = (props) =>{
   return(
     <div className={"CardLastPostContainer"}>
-      <div className={`CardLastPostImgContent bg-[${props.colorBase}]`}>
+      <div className={`CardLastPostImgContent ${props.colorBase}`} >
         <img src={props.img} className={"img"}/>
       </div>
       <div className={"CardLastPostInf"}>

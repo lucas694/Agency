@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  @apply mt-16 md:mt-0;
+  @apply mt-20 md:mt-0;
 }
 .SideText{
   @apply -rotate-90 w-[20em] text-center text-base font-semibold uppercase

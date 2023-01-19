@@ -1,13 +1,47 @@
 .HeaderMobileContainer{
-    @apply bg-[#2E2E2E] w-full fixed top-0 z-50 py-4 px-10 text-white
+    @apply bg-white w-full fixed top-0 z-50 text-white shadow-xl
     md:hidden
 }
+.HeaderMobileContent{
+    @apply flex flex-row justify-between items-center w-full  px-4 py-7
+    border-b-2 border-x-2 border-gray-800
+}
+.HeaderWorkmentMobile{
+    @apply text-2xl font-bold  text-gray-800
+}
+.MenuIconMobile{
+    @apply w-8 h-8 cursor-pointer transition-all duration-300 ease-in-out absolute right-0 -top-1
+}
+
+
+/*Header Mobile UL LI*/
+.ContentMobileMenu{
+    @apply flex flex-col w-full  bg-white shadow-xl
+
+}
+.CloseIconMobile{
+    @apply  fill-red-400 cursor-pointer  w-7 h-7
+    transition-all duration-300 ease-in-out
+}
+.BtnClose:hover .CloseIconMobile{
+    @apply fill-red-500 rotate-180 scale-125
+
+}
+
+.BtnClose{
+    @apply  absolute right-2 top-[4.5rem] cursor-pointer bg-white rounded-full px-2 py-2
+    sm:right-2 sm:top-7
+    transition-all duration-300 ease-in-out
+}
+
 .UlMobileHeader{
-    @apply flex flex-row justify-around
+    @apply flex flex-row justify-around bg-[#2E2E2E] w-full py-7 px-8
+    border-b  border-gray-200 sm:px-16
 }
 .LiMobileHeader{
-    @apply py-1 px-3 rounded-full
-    hover:bg-blue-300 hover:text-[#2E2E2E]
+    @apply py-1 px-2 rounded-full
+    hover:bg-[#C2F4FF] hover:text-[#2E2E2E]
+    sm:py-1.5 sm:px-3
 }
 
 .LinkMobileHeader{
@@ -19,5 +53,6 @@
 }
 
 .IconMobile{
-    @apply w-7 h-7 mr-2 mb-2
+    @apply w-7 h-7 mr-2 mb-1
 }
+

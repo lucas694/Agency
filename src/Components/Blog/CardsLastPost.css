@@ -7,7 +7,7 @@
 }
 /*Card Img*/
 .CardLastPostImgContent{
-    @apply flex justify-center items-center w-full h-[50%] 
+    @apply flex justify-center items-center w-full h-[50%]
 }
 .img{
     @apply w-[90%] h-[80%] object-cover border-2 border-gray-800
