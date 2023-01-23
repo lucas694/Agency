@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {useState} from "react";
 import { motion } from "framer-motion"
 
@@ -21,12 +21,12 @@ const MobileLink = (props) =>{
         className={"LiMobileHeader"}
         onClick={handleClick}
     >
-      <Link to={props.Link} className={"LinkMobileHeader"}>
+      <NavLink to={props.Link} className={"LinkMobileHeader"} >
         {props.Icon}
         <motion.span className={toggle ? "NameMobileHeader" : "hidden"}
                      animate={toggle ? { x: -2 } : { x: 15 }}
                      transition={{duration: 0.2}}>{props.Name}</motion.span>
-      </Link>
+      </NavLink>
     </li>
   )
 };export default MobileLink

@@ -1,7 +1,7 @@
 import "./Header.css"
 import {RxEnvelopeClosed} from "react-icons/rx";
 import StarIcon from "../assets/StarIcon.png"
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 const Header = () => {
   return(
@@ -20,19 +20,19 @@ const Header = () => {
         <div className={"HeaderList"}>
           <ul className={"UlHome"}>
             <li className={"LiHome"}>
-              <Link to={"/"}>home</Link>
+              <NavLink to={"/"}>home</NavLink>
             </li>
             <li className={"LiHome"}>
-              <Link to={"/Work"}>work</Link>
+              <NavLink to={"/Work"}>work</NavLink>
             </li>
             <li className={"LiHome"}>
-              <Link to={"/About"}>About</Link>
+              <NavLink to={"/About"}>About</NavLink>
             </li>
             <li className={"LiHome"}>
-              <Link to={"/Blog"}>Blog</Link>
+              <NavLink to={"/Blog"}>Blog</NavLink>
             </li>
             <li className={"LiHome"}>
-              <Link to={"/Contact"}>Contact</Link>
+              <NavLink to={"/Contact"}>Contact</NavLink>
             </li>
           </ul>
         </div>

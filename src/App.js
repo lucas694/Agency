@@ -8,11 +8,14 @@ import Work from "./Components/Work/Work";
 import Blog from "./Components/Blog/Blog";
 import Contact from "./Components/Contact/Contact";
 import HeaderMobile from "./Components/HeaderMobile";
+import { useLocation } from 'react-router-dom';
+import {useEffect} from "react";
+
 
 function App() {
+
   return (
     <div className="App">
-
       <Router>
         <Header />
         <HeaderMobile />

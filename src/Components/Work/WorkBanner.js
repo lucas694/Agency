@@ -1,4 +1,6 @@
 import "./WorkBanner.css"
+import Fade from 'react-reveal/Fade';
+
 
 const WorkBanner = () => {
   return(
@@ -6,10 +8,12 @@ const WorkBanner = () => {
       <section className={"WorkBannerSides"}>
         <span className={"SideText"}>work</span>
       </section>
-      <div className={"WorkBannerContent"}>
-        <h1 className={"WorkTitle"}>some of our finest</h1>
-        <h1 className={"WorkTitle"}>work</h1>
-      </div>
+      <Fade left cascade>
+        <div className={"WorkBannerContent"}>
+          <h1 className={"WorkTitle"}>some of our finest</h1>
+          <h1 className={"WorkTitle"}>work</h1>
+        </div>
+      </Fade>
       <section className={"WorkBannerSides"}></section>
     </div>
   )

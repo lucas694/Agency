@@ -1,9 +1,10 @@
 import "./BannerHome.css"
 import {BsPinterest, BsTwitter, BsFacebook,BsInstagram} from "react-icons/bs";
 import {FiArrowUpRight} from "react-icons/fi";
-
 import BannerHomeFront from "../../assets/homefront/BannerHomeFront.png"
 import BtnDefault from "../Buttons/BtnDefault";
+import Fade from 'react-reveal/Fade';
+
 
 const BannerHome = () => {
   return(
@@ -22,7 +23,7 @@ const BannerHome = () => {
           <BsInstagram className={"BannerIconsSide"}/>
         </a>
       </section>
-
+      <Fade left cascade>
       <div className={"BannerContent"}>
         <div className={"BannerLeft"}>
           <h1 className={"BannerTitle"}>technology & design</h1>
@@ -40,11 +41,12 @@ const BannerHome = () => {
           </section>
 
         </div>
+
         <div className={"BannerRight"}>
           <img src={BannerHomeFront} alt={"BannerFront"} className={"BannerImg"}/>
         </div>
 
-      </div>
+      </div></Fade>
       <section className={"BannerSides"}>
 
       </section>

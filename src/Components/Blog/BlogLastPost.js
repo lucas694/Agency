@@ -6,6 +6,8 @@ import CardPhoto3 from "../../assets/blog/CardPhoto3.png"
 import CardPhoto4 from "../../assets/blog/CardPhoto4.png"
 import CardPhoto5 from "../../assets/blog/CardPhoto5.png"
 import CardPhoto6 from "../../assets/blog/CardPhoto6.png"
+import LightSpeed from 'react-reveal/LightSpeed';
+
 
 const BlogLastPost = () => {
   const dataCards=[
@@ -22,8 +24,10 @@ const BlogLastPost = () => {
         <span className={"SideText"}>lastest post</span>
       </section>
       <div className={"LastPostContent"}>
+        <LightSpeed left cascade>
         <h1 className={"LastPostTitle"}>lastest post</h1>
         <p className={"LastPostDesc"}>Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem when printer.</p>
+        </LightSpeed>
 
         <div className={"LastPostCardContainer"}>
           {dataCards.map((item) => {
@@ -33,6 +37,7 @@ const BlogLastPost = () => {
                              CardName={item.CardName}
                              CardDate={item.CardDate}
                              CardDescription={item.CardDescription}
+                             key={item.id}
               />
             )
           })}

@@ -3,6 +3,8 @@ import TeamCard from "./TeamCard";
 import John from "../../../assets/About/jacob.png"
 import Kevin from "../../../assets/About/kevin.png"
 import Dorothy from "../../../assets/About/dorothy.png"
+import Bounce from 'react-reveal/Bounce';
+
 import {BsPinterest, BsTwitter, BsInstagram, BsFacebook} from "react-icons/bs";
 
 
@@ -20,20 +22,23 @@ const Team = () => {
 
       <div className={"TeamContent"}>
         <h1 className={"TeamTitle"}>the amazing team behind our agency</h1>
+        <Bounce left>
+          <div className={"TeamCards"}>
 
-        <div className={"TeamCards"}>
-          {TeamData.map((item) => {
-            return(
-              <TeamCard key={item.id}
-                        name={item.name}
-                        title={item.title}
-                        img={item.img}
-                        FistIcon={item.FistIcon}
-                        SecondIcon={item.SecondIcon
-              }/>
-            )
-          })}
-        </div>
+            {TeamData.map((item) => {
+              return(
+                <TeamCard key={item.id}
+                          name={item.name}
+                          title={item.title}
+                          img={item.img}
+                          FistIcon={item.FistIcon}
+                          SecondIcon={item.SecondIcon
+                }/>
+              )
+            })}
+
+          </div>
+        </Bounce>
       </div>
       <section className={"TeamSides"}></section>
 

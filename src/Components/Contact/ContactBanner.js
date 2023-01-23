@@ -1,4 +1,5 @@
 import "./ContactBanner.css"
+import Fade from "react-reveal/Fade";
 
 const ContactBanner = () => {
   return(
@@ -6,10 +7,13 @@ const ContactBanner = () => {
       <section className={"ContactBannerSides"}>
         <span className={"SideText"}>Contact</span>
       </section>
-      <div className={"ContactBannerContent"}>
-        <h1 className={"ContactBannerTitle"}>get a free quote now</h1>
-      </div>
+      <Fade left cascade>
+        <div className={"ContactBannerContent"}>
+          <h1 className={"ContactBannerTitle"}>get a free quote now</h1>
+        </div>
+      </Fade>
       <section className={"ContactBannerSides"}></section>
     </div>
+
   )
 }; export default ContactBanner

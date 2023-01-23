@@ -24,7 +24,7 @@ const Gallery = () => {
       <div className={"GalleryContent"}>
         {GalleryData.map((item) => {
           return(
-            <GalleryCard id={item.id}
+            <GalleryCard key={item.id}
                          title={item.title}
                          description={item.description}
                          img={item.img}

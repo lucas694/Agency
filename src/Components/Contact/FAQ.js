@@ -20,6 +20,7 @@ const FAQ = () => {
             <FaqCards CardNumber={item.id}
                       title={item.title}
                       description={item.description}
+                      key={item.id}
             />
           )
         })}

@@ -1,5 +1,4 @@
 import"./HeaderMobile.css"
-import{Link} from "react-router-dom";
 import {ImHome3} from "react-icons/im";
 import {MdWork} from "react-icons/md";
 import {SiMicrodotblog} from "react-icons/si";
@@ -14,11 +13,21 @@ import { motion } from "framer-motion"
 
 const HeaderMobile = () => {
   const[toggle, setToggle] = useState(false);
+  const[menu, setMenu] = useState(false);
+
   const handleToggle = () => {
     setToggle(!toggle);
   }
 
+  const NavMobileLinks=[
+    {id:1 ,Icon: <ImHome3 className={"IconMobile"}/>, Name: "home", Link: "/"},
+    {id:2 ,Icon: <MdWork className={"IconMobile"}/>, Name: "work", Link: "/Work"},
+    {id:3 ,Icon: <BsInfoCircleFill className={"IconMobile"}/>, Name: "about", Link: "/About"},
+    {id:4 ,Icon: <SiMicrodotblog className={"IconMobile"}/>, Name: "blog", Link: "/Blog"},
+    {id:5 ,Icon: <BsPersonCircle className={"IconMobile"}/>, Name: "contact", Link: "/Contact"},
+  ]
   return(
+
     <div className={"HeaderMobileContainer"}>
       <motion.div className={toggle ? 'hidden' : "HeaderMobileContent"}
            animate={ toggle ? { x: 200 } : { x: 0 }}
@@ -41,29 +50,15 @@ const HeaderMobile = () => {
           <VscChromeClose className={"CloseIconMobile"}/>
         </button>
         <ul className={toggle ? "UlMobileHeader" : "hidden"}>
-          <MobileLink Icon={<ImHome3 className={"IconMobile"}/>}
-                      Name={"home"}
-                      Link={"/"}
-          />
-          <MobileLink Icon={<MdWork className={"IconMobile"}/>}
-                      Name={"work"}
-                      Link={"/Work"}
-          />
-          <MobileLink Icon={<BsInfoCircleFill className={"IconMobile"}/>}
-                      Name={"about"}
-                      Link={"/About"}
-          />
-          <MobileLink Icon={<SiMicrodotblog className={"IconMobile"}/>}
-                      Name={"blog"}
-                      Link={"/Blog"}
-          />
-          <MobileLink Icon={<BsPersonCircle className={"IconMobile"}/>}
-                      Name={"contact"}
-                      Link={"/Contact"}
-          />
+          {NavMobileLinks.map((link) => (
+            <MobileLink key={link.id}
+                        Icon={link.Icon}
+                        Name={link.Name}
+                        Link={link.Link}
+            />
+          ))}
         </ul>
       </motion.div>
-
     </div>
   )
 };export default HeaderMobile

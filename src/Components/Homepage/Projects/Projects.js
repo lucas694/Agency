@@ -12,7 +12,6 @@ import TexasPortBg from "../../../assets/homefront/projects/texasPortBg.png";
 import {FiArrowUpRight} from "react-icons/fi";
 import BtnDefault from "../../Buttons/BtnDefault";
 
-
 const Projects = () => {
   const projects = [
     {id:1, projectName:"web application", projectDesc:"Lorem Ipsum is simply text of the printingand typesetting industry.", projectImg:WebImg, ProjectBg:Webg},
@@ -25,25 +24,23 @@ const Projects = () => {
       <section className={"ProjectSides"}>
         <span className={"SideText"}>some of our finest work</span>
       </section>
-
-      <div className={"ProjectContent"}>
-        {projects.map((project)=>{
-          return(
-            <ProjectsCards key={project.id}
-                           projectName={project.projectName}
-                           projectDesc={project.projectDesc}
-                           projectImg={project.projectImg}
-                           ProjectBg={project.ProjectBg}/>
-          )
-        })}
-        <div className={"mt-16"}>
-          <BtnDefault className={"BtnBlackBase"}
-                      BtnText={"get started"}
-                      BtnIcon={<FiArrowUpRight className={"BtnIcon"}/>}
-          />
+        <div className={"ProjectContent"}>
+          {projects.map((project)=>{
+            return(
+              <ProjectsCards key={project.id}
+                             projectName={project.projectName}
+                             projectDesc={project.projectDesc}
+                             projectImg={project.projectImg}
+                             ProjectBg={project.ProjectBg}/>
+            )
+          })}
+          <div className={"mt-16"}>
+            <BtnDefault className={"BtnBlackBase"}
+                        BtnText={"get started"}
+                        BtnIcon={<FiArrowUpRight className={"BtnIcon"}/>}
+            />
+          </div>
         </div>
-      </div>
-
       <section className={"ProjectSides"}>
 
       </section>
