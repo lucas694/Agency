@@ -27,7 +27,7 @@ const Projects = () => {
         <span className={"SideText"}>some of our finest work</span>
       </section>
         <div className={"ProjectContent"}>
-          <Slide direction={"left"} cascade={true} duration={2000} triggerOnce={true}>
+          <Slide direction={"left"} cascade={true} duration={1000} triggerOnce={true}>
             {projects.map((project)=>{
               return(
                 <ProjectsCards key={project.id}
