@@ -11,6 +11,8 @@ import TexasPortImg from "../../../assets/homefront/projects/texasPortImg.png";
 import TexasPortBg from "../../../assets/homefront/projects/texasPortBg.png";
 import {FiArrowUpRight} from "react-icons/fi";
 import BtnDefault from "../../Buttons/BtnDefault";
+import { Slide } from "react-awesome-reveal";
+
 
 const Projects = () => {
   const projects = [
@@ -25,15 +27,17 @@ const Projects = () => {
         <span className={"SideText"}>some of our finest work</span>
       </section>
         <div className={"ProjectContent"}>
-          {projects.map((project)=>{
-            return(
-              <ProjectsCards key={project.id}
-                             projectName={project.projectName}
-                             projectDesc={project.projectDesc}
-                             projectImg={project.projectImg}
-                             ProjectBg={project.ProjectBg}/>
-            )
-          })}
+          <Slide direction={"left"} cascade={true} duration={2000} triggerOnce={true}>
+            {projects.map((project)=>{
+              return(
+                <ProjectsCards key={project.id}
+                               projectName={project.projectName}
+                               projectDesc={project.projectDesc}
+                               projectImg={project.projectImg}
+                               ProjectBg={project.ProjectBg}/>
+              )
+            })}
+          </Slide>
           <div className={"mt-16"}>
             <BtnDefault className={"BtnBlackBase"}
                         BtnText={"get started"}
