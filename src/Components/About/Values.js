@@ -1,6 +1,5 @@
 import "./Values.css"
 import ValuesCard from "./ValuesCard";
-import Fade from 'react-reveal/Fade';
 
 const Values = () => {
   const ValuesData=[
@@ -15,7 +14,6 @@ const Values = () => {
       <section className={"ValuesSides"}>
         <span className={"SideText text-[#2E2E2E]"}>values</span>
       </section>
-      <Fade cascade>
         <div className={"ValuesContent"}>
           <h1 className={"ValuesTitle"}>why should</h1>
           <h1 className={"ValuesTitle"}>you work with us?</h1>
@@ -23,18 +21,16 @@ const Values = () => {
           <div className={"TopicsContainer"}>
             {ValuesData.map((item) => {
               return(
-                <ValuesCard CardNumber={item.id}
-                            title={item.title}
-                            description={item.description}
-                            key={item.id}
-                />
+                  <ValuesCard CardNumber={item.id}
+                              title={item.title}
+                              description={item.description}
+                              key={item.id}
+                  />
               )
             })}
           </div>
         </div>
-      </Fade>
       <section className={"ValuesSides"}></section>
-
     </div>
   )
 }; export default Values

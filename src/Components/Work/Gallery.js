@@ -6,6 +6,7 @@ import DigitalAgency from "../../assets/work/digitalagency.png"
 import BusinessMarketing from "../../assets/work/business.png"
 import PlanManagement from "../../assets/work/planmanagement.png"
 import NewTechnology from "../../assets/work/newtechnology.png"
+import {Fade} from "react-awesome-reveal";
 
 const Gallery = () => {
   const GalleryData =[
@@ -24,11 +25,13 @@ const Gallery = () => {
       <div className={"GalleryContent"}>
         {GalleryData.map((item) => {
           return(
-            <GalleryCard key={item.id}
-                         title={item.title}
-                         description={item.description}
-                         img={item.img}
-            />
+            <Fade direction={"up"} delay={item.id * 300} cascade={true} triggerOnce={true} key={item.id}>
+              <GalleryCard key={item.id}
+                           title={item.title}
+                           description={item.description}
+                           img={item.img}
+              />
+            </Fade>
           )
         })}
       </div>

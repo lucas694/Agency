@@ -1,10 +1,11 @@
 import "./ProjectsCards.css"
 import BtnDefault from "../../Buttons/BtnDefault";
-import Fade from 'react-reveal/Fade';
+import { Slide } from "react-awesome-reveal";
+
 const ProjectsCards = (props) => {
   return(
     <div className={"ProjectsCardsContainer"}>
-      <Fade left cascade>
+      <Slide direction={"left"} cascade={true} duration={2000} triggerOnce={true}>
         <div className={"ProjectsCardsContent"}>
          <div className={"ProjectCardsLeft"}>
            <section className={"ProjectCardTextSec"}>
@@ -27,7 +28,7 @@ const ProjectsCards = (props) => {
            </div>
          </div>
         </div>
-      </Fade>
+      </Slide>
     </div>
   )
 }; export default ProjectsCards

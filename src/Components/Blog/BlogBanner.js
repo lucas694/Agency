@@ -1,5 +1,6 @@
 import "./BlogBanner.css"
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
+
 
 
 const BlogBanner = () => {
@@ -8,12 +9,13 @@ const BlogBanner = () => {
       <section className={"BlogBannerSides"}>
         <span className={"SideText"}>blog</span>
       </section>
-      <Fade left cascade>
         <div className={"BlogBannerContent"}>
-          <h1 className={"BlogBannerTitle"}>articles</h1>
-          <h1 className={"BlogBannerTitle"}>& resources</h1>
+          <Fade direction={"left"} cascade={true}  triggerOnce={false}>
+            <h1 className={"BlogBannerTitle"}>articles</h1>
+            <h1 className={"BlogBannerTitle"}>& resources</h1>
+          </Fade>
         </div>
-      </Fade>
+
       <section className={"BlogBannerSides"}></section>
     </div>
   )

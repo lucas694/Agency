@@ -3,7 +3,7 @@ import CardsOffice from "./CardsOffice";
 import CardImg1 from "../../assets/contact/Card1.jpg"
 import CardImg2 from "../../assets/contact/Card2.jpg"
 import CardImg3 from "../../assets/contact/Card3.jpg"
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 const Office = () =>{
   const CardsOfficeData = [
@@ -16,7 +16,6 @@ const Office = () =>{
       <section className={"OfficeSides"}>
         <span className={"SideText"}>office</span>
       </section>
-      <Fade left cascade>
         <div className={"OfficeContent"}>
           <h1 className={"OfficeTitle"}>our office</h1>
           <p className={"OfficeDescription"}>Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem when printer.</p>
@@ -30,7 +29,6 @@ const Office = () =>{
             )})}
           </div>
         </div>
-      </Fade>
       <section className={"OfficeSides"}></section>
     </div>
   )

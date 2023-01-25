@@ -2,13 +2,12 @@ import "./CardsLastPost.css"
 import DateIcon from "../../assets/blog/DateIcon.png"
 import ChatIcon from "../../assets/blog/ChatIcon.png"
 import  {FaArrowRight}  from  "react-icons/fa" ;
-import Fade from 'react-reveal/Zoom';
 
 
 
 const CardsLastPost = (props) =>{
   return(
-    <Fade right cascade>
+
     <div className={"CardLastPostContainer"}>
       <div className={`CardLastPostImgContent ${props.colorBase}`} >
         <img src={props.img} className={"img"}/>
@@ -31,9 +30,8 @@ const CardsLastPost = (props) =>{
             <FaArrowRight className={"CardLastArrowIcon"}/>
           </div>
         </div>
-
       </div>
     </div>
-    </Fade>
+
   )
 };export default CardsLastPost

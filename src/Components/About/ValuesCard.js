@@ -1,6 +1,8 @@
 import {AiOutlineArrowRight} from "react-icons/ai";
 import {useState} from "react";
-import Slide from 'react-reveal/Slide';
+import { Slide } from "react-awesome-reveal";
+
+
 
 const ValuesCard = (props) => {
   const [toggle, setToggle] = useState(false);
@@ -10,7 +12,7 @@ const ValuesCard = (props) => {
   return(
     <>
       <section className={"ValuesTopics"}>
-        <Slide left cascade>
+        <Slide direction={"left"} cascade={true}>
           <div className={"flex flex-row"}>
             <span className={"ValuesTopicTitle mr-2"}>{`0${props.CardNumber}.`}</span>
             <h1 className={"ValuesTopicTitle"}>{props.title}</h1>

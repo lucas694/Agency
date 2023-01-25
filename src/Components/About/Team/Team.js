@@ -3,7 +3,8 @@ import TeamCard from "./TeamCard";
 import John from "../../../assets/About/jacob.png"
 import Kevin from "../../../assets/About/kevin.png"
 import Dorothy from "../../../assets/About/dorothy.png"
-import Bounce from 'react-reveal/Bounce';
+import { Fade } from "react-awesome-reveal";
+
 
 import {BsPinterest, BsTwitter, BsInstagram, BsFacebook} from "react-icons/bs";
 
@@ -22,9 +23,8 @@ const Team = () => {
 
       <div className={"TeamContent"}>
         <h1 className={"TeamTitle"}>the amazing team behind our agency</h1>
-        <Bounce left>
+        <Fade triggerOnce={true} direction={"up"} duration={1000} delay={100} cascade={true}>
           <div className={"TeamCards"}>
-
             {TeamData.map((item) => {
               return(
                 <TeamCard key={item.id}
@@ -36,9 +36,8 @@ const Team = () => {
                 }/>
               )
             })}
-
           </div>
-        </Bounce>
+        </Fade>
       </div>
       <section className={"TeamSides"}></section>
 

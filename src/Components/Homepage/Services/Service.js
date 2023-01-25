@@ -6,8 +6,9 @@ import {IoPlanetOutline} from "react-icons/io5";
 import ServiceCard from "./ServiceCard";
 import {FiArrowUpRight} from "react-icons/fi";
 import BtnDefault from "../../Buttons/BtnDefault";
-import Fade from 'react-reveal/Fade';
-
+import { Fade } from "react-awesome-reveal";
+import { JackInTheBox } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const Service = () => {
   return(
@@ -17,14 +18,16 @@ const Service = () => {
       <section className={"ServiceSides"}>
         <span className={"SideText"}>what we can do for you</span>
       </section>
-      <Fade left cascade>
         <div className={"ServiceContent"}>
           <section className={"ServiceTexts"}>
-            <h1 className={"ServiceTittle"}>we can help you with
+            <JackInTheBox triggerOnce={false} cascade={true}>
+              <h1 className={"ServiceTittle"}>we can help you with
               <HiOutlineCog8Tooth className={"IconConfig"}/> </h1>
+            </JackInTheBox>
               <p className={"ServicesDesc"}>Lorem Ipsum is simply dummy text of the printingand typesetting industry.</p>
           </section>
 
+        <Fade direction={"left"} cascade={true}  triggerOnce={true}>
           <div className={"ServicesCardSection"}>
             <ServiceCard CardTitle={"online marketing"}
                          CardIcon={<TbSpeakerphone className={`ServIcon`}/>}
@@ -40,7 +43,7 @@ const Service = () => {
                          CardIcon={<IoPlanetOutline className={`ServIcon`}/>}
             />
           </div>
-
+        </Fade>
           <div className={"ServicesBtnSec"}>
             <BtnDefault className={"BtnBlackBaseServices"}
                         BtnText={"get started"}
@@ -48,11 +51,9 @@ const Service = () => {
             />
           </div>
         </div>
-      </Fade>
       <section className={"ServiceSides"}>
 
       </section>
-
     </div>
   )
 }; export default Service
